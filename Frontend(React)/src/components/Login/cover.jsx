@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 
-const RegisterCover = () => {
+const LoginCover = () => {
     return (
       <div className="bg-div" id="register">
         <div className="head m-5">
@@ -9,8 +9,8 @@ const RegisterCover = () => {
             <Fade top cascade>
               <div className="page-heading text-center">
                 {/*<p className="font-italic side-line first-text"></p>*/}
-                <h1 className="second-text">Inspired?</h1>
-                <h3 className="side-line third-text">Get started & build <br/> a life changing innovation</h3>
+                <h1 className="second-text">Welcome Back!</h1>
+                <h3 className="side-line third-text">Login to your registered &  <br/> get Started</h3>
               </div>
             </Fade>
           </div>
@@ -26,4 +26,4 @@ const RegisterCover = () => {
     );
 }
 
-export default RegisterCover;
+export default LoginCover;

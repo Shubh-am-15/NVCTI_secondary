@@ -1,6 +1,13 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect, Component, Fragment, lazy, Suspense } from 'react'
 import {useHistory} from 'react-router-dom'
 import Header from './Header';
+import Footer from './components/common/footer';
+import Loading from './components/common/Loading';
+const LoginCover = lazy(() => import('./components/Login/cover'));
+const LoginInfo = lazy(() => import('./components/Login/info'));
+// import LoginCover from './components/Login/cover';
+// import LoginInfo from '.components/Login/info';
+ 
 function Login(){
     const history = useHistory();
     useEffect(() =>{
@@ -28,10 +35,13 @@ async function login(){
     }
 
     return (
-        <div>
+        <Fragment >
+        <Suspense fallback={<Loading />}>
             <Header/>
+            <LoginCover />
+            <LoginInfo />
             <h1>Login Page</h1>
-            <div className="col-sm-4 offset-sm-4">
+            <div className="col-sm-4 offset-sm-4 register-form">
             <h3>E mail</h3>
             <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)} className="form-control"></input>
             <br/>
@@ -40,7 +50,9 @@ async function login(){
             <br/>
             <button onClick={login} type="submit" className="btn btn-primary">Login</button>
         </div>
-        </div>
+        <Footer />
+        </Suspense>
+        </Fragment>
     );
 }
 

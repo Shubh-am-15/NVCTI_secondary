@@ -5,8 +5,8 @@ import './App.css';
 function Profile() {
     return (
         <Fade>
-            {/* <Header /> */}
-            <Container className="m-3" />
+            <Header />
+            {/* <Container className="m-5" /> */}
             <Container className="m-5 heading">
                 <Row>
                     <Col>Profile Page</Col>

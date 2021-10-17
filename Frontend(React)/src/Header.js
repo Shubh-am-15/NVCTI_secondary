@@ -19,7 +19,7 @@ function Header(){
 
     return (
             <Fade>
-            <Navbar bg="dark" variant="light" className="header-nav dark" fixed="top" collapseOnSelect expand="xl">
+            <Navbar bg="dark" variant="light" className="header-nav dark"  collapseOnSelect expand="xl">
                 
                 {/* <Navbar.Brand href="/home">Home</Navbar.Brand> */}
                 <Link className="px-4 nav-link" to="/">
