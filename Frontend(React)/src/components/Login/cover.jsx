@@ -10,7 +10,7 @@ const LoginCover = () => {
               <div className="page-heading text-center">
                 {/*<p className="font-italic side-line first-text"></p>*/}
                 <h1 className="second-text">Welcome Back!</h1>
-                <h3 className="side-line third-text">Login to your registered &  <br/> get Started</h3>
+                <h3 className="side-line third-text">Login to your registered account &  <br/> get Started</h3>
               </div>
             </Fade>
           </div>

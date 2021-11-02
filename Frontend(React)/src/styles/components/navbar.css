@@ -24,6 +24,7 @@
   letter-spacing: 1px;
   padding: 1rem 20px !important;
   transition: all 0.5s ease;
+  color: white;
 }
 
 .header-nav.transparent .nav-link {
@@ -109,4 +110,15 @@
   background-color: rgba(21, 21, 21, 1) !important;
   color: white !important;
   transition: all 0.5s ease;
+}
+
+.logout{
+  color: #fff;
+}
+#dropdown-basic:focus{
+ box-shadow: none;  
+}
+.dropdownMenu{
+  position: absolute;
+  z-index: 100;
 }

@@ -73,6 +73,7 @@ function Register() {
                     
                     <input type="number" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Contact Number" value={number} onChange={(e) => setNumber(e.target.value)}></input>
                 </div>
+                <button onClick={signUp} type="submit" className="btn btn-primary">Sign Up</button>
                 {/* <h3>Name</h3>
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="form-control"></input>
             <br />
@@ -82,7 +83,7 @@ function Register() {
             <h3>Password</h3>
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="form-control"></input>
             <br />
-            <button onClick={signUp} type="submit" className="btn btn-primary">Sign Up</button>*/}
+           */}
             </div>
             <Footer />
         </Suspense>

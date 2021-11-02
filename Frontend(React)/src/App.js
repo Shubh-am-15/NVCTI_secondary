@@ -16,6 +16,7 @@ import Home from './Pages/Home';
 import {BrowserRouter,Route} from 'react-router-dom';
 import ComingSoon from './Pages/ComingSoon';
 import Contacts from './Pages/Contacts'
+import AllEvents from './Pages/AllEvents';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
 
       <Route exact path="/login">
           <Login/>
+      </Route>
+      <Route exact path="/allEvents">
+          <AllEvents/>
       </Route>
       
       <Route exact path="/profile">
