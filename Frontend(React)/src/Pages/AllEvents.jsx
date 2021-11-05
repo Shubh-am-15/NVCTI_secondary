@@ -5,7 +5,7 @@ import EventsCover from "../components/events-page/cover";
 import Events from "../components/events-page/Events";
 import Header from "../Header";
 
-const url='https://course-api.com/react-tours-project';
+const url='http://127.0.0.1:8000/api/list';
 
 function AllEvents(){
 
@@ -15,6 +15,7 @@ function AllEvents(){
         const response=await fetch(url);
         const tours= await response.json();
         setTours(tours);
+        console.log(tours);
             
         } catch (error) {
             console.log(`error: ${error}`);

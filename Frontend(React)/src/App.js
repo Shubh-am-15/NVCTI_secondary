@@ -17,6 +17,7 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import ComingSoon from './Pages/ComingSoon';
 import Contacts from './Pages/Contacts'
 import AllEvents from './Pages/AllEvents';
+import AdminDashboard from './Pages/AdminDashboard';
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
       </Route>
       <Route exact path="/allEvents">
           <AllEvents/>
+      </Route>
+      <Route exact path="/admin_dashboard">
+          <AdminDashboard/>
       </Route>
       
       <Route exact path="/profile">
