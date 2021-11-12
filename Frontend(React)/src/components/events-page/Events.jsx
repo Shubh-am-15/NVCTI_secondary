@@ -3,10 +3,10 @@ import EventCard from "./EventCard";
 import { Container, Row, Col } from 'react-bootstrap';
 import { Fade } from 'react-reveal'
 
-const Events= ({events}) => {
-    return (
-        <>
-            <section className="events">
+const Events = ({ events }) => {
+  return (
+    <>
+      <section className="events">
         <Container>
           <Row style={{ justifyContent: 'center' }}>
             <Fade>
@@ -58,15 +58,22 @@ const Events= ({events}) => {
           </Row>
         </Container>
       </section>
-           
-            <hr />
-            <div>
-                {events.map((event)=> {
-                return <EventCard key={event.id} {...event}></EventCard>;}
-                )}
-            </div>
-        </>
-    );
+
+      <hr />
+
+      <div className="eventsContainer" style={{ backgroundColor: "#f8f8f8" }}>
+        <Container className="events-card-container ">
+        <Row className="news">
+          {events.map((event) => {
+            return <EventCard key={event.id} {...event}></EventCard>;
+          }
+          )}
+          </Row>
+        </Container>
+      </div>
+
+    </>
+  );
 }
 
 export default Events;

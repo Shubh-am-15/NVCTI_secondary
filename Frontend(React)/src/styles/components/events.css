@@ -112,7 +112,7 @@
 .events-card-container{
     padding: 100px 15px;
     position: relative !important;
-    width: 100vw !important;
+    width: 70vw !important;
     margin: 0 auto !important;
     background: #f8f8f8!important;
 }
@@ -239,6 +239,35 @@
   text-transform: uppercase;
 }
 /* new css Shubham */
+
+.article h3::after{
+  content: '';
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    left: 0px;
+    top:10px;
+    right: 0;
+    margin: 0 auto;
+}
+.eventsContainer{
+ 
+  margin: 10px auto;
+}
+
+.eventTile{
+  width: 50%;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: cadetblue;
+  margin: 5px;
+  cursor: pointer;
+}
+.CrossButton{
+  cursor: pointer;
+}
 .carddiv{
 width: 50%;
 margin: 20px auto;

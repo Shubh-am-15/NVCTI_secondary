@@ -24,3 +24,4 @@ Route::post('/register',[UserController::class, 'register']);
 Route::post('/login',[UserController::class, 'login']);
 Route::post('/addEvents',[EventController::class, 'addEvents']); //???
 Route::get('/list',[EventController::class,'list']);
+Route::delete('/delete/{id}',[EventController::class,'delete']);
